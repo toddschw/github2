@@ -1,5 +1,5 @@
 require 'sinatra'
 
 get '/' do
-  "This is the baz file"
+  File.read(File.join('public', 'hello.txt'))
 end
